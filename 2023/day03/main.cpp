@@ -125,7 +125,6 @@ int calculateGearRatio(string fileName) {
 
             for (auto &coord: intersection) {
                 if (checkCoord(symbols, coord)) {
-                    cout << get<3>(parts[i]) << "/" << get<3>(parts[j]) << endl;
                     sum += get<3>(parts[i]) * get<3>(parts[j]);
                     break;
                 }   
