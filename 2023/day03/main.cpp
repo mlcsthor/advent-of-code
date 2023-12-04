@@ -136,7 +136,7 @@ int calculateGearRatio(string fileName) {
 }
 
 int main() {
-    cout << "Advent of Code 2023 - Day 2" << endl << endl;
+    cout << "Advent of Code 2023 - Day 3" << endl << endl;
 
     cout << "Part 1" << endl;
     cout << "Result for example: " << calculatePartsSum("example.txt") << endl;
