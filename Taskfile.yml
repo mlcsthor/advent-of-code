@@ -1,0 +1,9 @@
+version: '3'
+
+tasks:
+  run:
+    dir: '{{.USER_WORKING_DIR}}'
+    cmds:
+      - g++ -std=c++17 -o ./main ./main.cpp
+      - defer: rm ./main
+      - ./main

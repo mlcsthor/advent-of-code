@@ -2,9 +2,10 @@
 
 {
   # https://devenv.sh/packages/
-  packages = [ 
-    pkgs.git 
-    pkgs.nixpkgs-fmt  
+  packages = [
+    pkgs.git
+    pkgs.nixpkgs-fmt
+    pkgs.go-task
   ];
 
   languages.cplusplus.enable = true;
