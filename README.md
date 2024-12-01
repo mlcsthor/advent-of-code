@@ -7,6 +7,6 @@ journey
       26 ⭐: 4: Python
     section 2023
       25 ⭐: 4: C++
-    section 2023
+    section 2024
       ? ⭐: 1: C++
 ```
