@@ -17,6 +17,9 @@ bool isSafe(vector<int> report)
     if (is_sorted(report.begin(), report.end(), descComp))
         reverse(report.begin(), report.end());
 
+    if (!is_sorted(report.begin(), report.end()))
+        return false;
+
     vector<int>::iterator it;
     for (it = report.begin(); it != report.end() - 1; it++)
     {
@@ -75,25 +78,10 @@ int countSafeReports(vector<vector<int>> reports, bool dampener)
 {
     int count = 0;
     for (auto report : reports)
-    {
-        // List is sorted desc
-        if (is_sorted(report.begin(), report.end(), descComp))
-            reverse(report.begin(), report.end());
-
-        // Report is unsafe
-        if (!is_sorted(report.begin(), report.end()))
-        {
-            if (dampener && isDampenerSafe(report))
-                count++;
-
-            continue;
-        }
-
         if (isSafe(report))
             count++;
         else if (dampener && isDampenerSafe(report))
             count++;
-    }
 
     return count;
 }
