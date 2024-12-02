@@ -35,15 +35,9 @@ bool isDampenerSafe(vector<int> report)
 {
     vector<vector<int>> combinations(size(report));
     for (int i = 0; i < size(report); i++)
-    {
         for (int j = 0; j < size(report); j++)
-        {
-            if (i == j)
-                continue;
-
-            combinations[j].push_back(report[i]);
-        }
-    }
+            if (i != j)
+                combinations[j].push_back(report[i]);
 
     for (auto r : combinations)
         if (isSafe(r))
