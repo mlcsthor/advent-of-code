@@ -20,8 +20,7 @@ bool isSafe(vector<int> report)
     if (!is_sorted(report.begin(), report.end()))
         return false;
 
-    vector<int>::iterator it;
-    for (it = report.begin(); it != report.end() - 1; it++)
+    for (auto it = report.begin(); it != report.end() - 1; it++)
     {
         int offset = *(it + 1) - *it;
         if (offset <= 0 || offset > maxOffset)
@@ -82,7 +81,7 @@ int countSafeReports(vector<vector<int>> reports, bool dampener)
 
 int main()
 {
-    cout << "Advent of Code 2024 - Day 1" << endl
+    cout << "Advent of Code 2024 - Day 2" << endl
          << endl;
 
     auto example = readFile("example.txt");
