@@ -3,6 +3,9 @@ __pycache__
 build
 input.txt
 
+# VSCode
+.vscode
+
 # Devenv
 .devenv*
 devenv.local.nix
