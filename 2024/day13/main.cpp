@@ -89,10 +89,4 @@ int main()
     cout << "Result for example: " << calc(example, 10000000000000) << endl;
     cout << "Result for input: " << calc(input, 10000000000000) << endl
          << endl;
-
-    // cout
-    //     << "Part 2" << endl;
-    // cout << "Result for example: " << countResonantLocations(example) << endl;
-    // cout << "Result for input: " << countResonantLocations(input) << endl
-    //      << endl;
 }
