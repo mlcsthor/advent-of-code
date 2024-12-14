@@ -72,7 +72,7 @@ long calc(vector<Input> inputs, long offset)
 
 int main()
 {
-    cout << "Advent of Code 2024 - Day 8" << endl
+    cout << "Advent of Code 2024 - Day 13" << endl
          << endl;
 
     auto example = readFile("example.txt");

@@ -67,7 +67,7 @@ int blinkStones(vector<long long> stones, int c)
 
 int main()
 {
-    cout << "Advent of Code 2024 - Day 8" << endl
+    cout << "Advent of Code 2024 - Day 11" << endl
          << endl;
 
     auto example = readFile("example.txt");
