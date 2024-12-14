@@ -73,11 +73,11 @@ int calcSafetyFactor(vector<Robot> robots, int seconds, int cols, int rows)
 
 int findChristmasTree(vector<Robot> robots, int seconds, int cols, int rows)
 {
+    set<pair<int, int>> posSet;
+
     int i;
     for (i = 1; i < seconds; i++)
     {
-        vector<vector<char>> visual(rows, vector<char>(cols, ' '));
-        set<pair<int, int>> posSet;
 
         for (auto it = robots.begin(); it != robots.end(); it++)
         {
@@ -89,13 +89,14 @@ int findChristmasTree(vector<Robot> robots, int seconds, int cols, int rows)
             if (y < 0)
                 y += rows;
 
-            visual[y][x] = '#';
             it->pos = {x, y};
             posSet.insert({x, y});
         }
 
         if (robots.size() == posSet.size())
             break;
+
+        posSet.clear();
     }
 
     return i;
