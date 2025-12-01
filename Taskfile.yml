@@ -1,9 +1,11 @@
-version: '3'
+version: "3"
 
 tasks:
   run:
-    dir: '{{.USER_WORKING_DIR}}'
+    dir: "{{.USER_WORKING_DIR}}"
     cmds:
       - g++ -std=c++20 -o ./main ./main.cpp
       - defer: rm ./main
       - ./main
+    aliases:
+      - r
