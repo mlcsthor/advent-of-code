@@ -9,4 +9,6 @@ journey
       25 ⭐: 4: C++
     section 2024
       21 ⭐: 2: C++
+    section 2025
+      2 ⭐: 1: C++
 ```
