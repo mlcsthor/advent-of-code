@@ -8,5 +8,5 @@ journey
     section 2023
       25 ⭐: 4: C++
     section 2024
-      ? ⭐: 1: C++
+      21 ⭐: 2: C++
 ```
