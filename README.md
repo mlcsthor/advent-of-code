@@ -2,13 +2,13 @@
 journey
     title My Advent of Code Journey
     section 2021
-      24 ⭐: 4: Python
+      24/50 ⭐: 4: Python
     section 2022
-      26 ⭐: 4: Python
+      26/50 ⭐: 4: Python
     section 2023
-      25 ⭐: 4: C++
+      25/50 ⭐: 4: C++
     section 2024
-      21 ⭐: 2: C++
+      21/50 ⭐: 2: C++
     section 2025
-      2 ⭐: 1: C++
+      4/24 ⭐: 1: C++
 ```
