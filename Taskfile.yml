@@ -9,3 +9,13 @@ tasks:
       - ./main
     aliases:
       - r
+
+  new:
+    dir: "{{.TASKFILE_DIR}}"
+    requires:
+      vars:
+        - Y
+        - D
+    cmds:
+      - mkdir -p 20{{.Y}}/day{{.D}}
+      - touch 20{{.Y}}/day{{.D}}/{input.txt,example.txt,main.cpp}
