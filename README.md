@@ -1,14 +1,15 @@
 ```mermaid
-journey
-    title My Advent of Code Journey
-    section 2021
-      24/50 ⭐: 4: Python
-    section 2022
-      26/50 ⭐: 4: Python
-    section 2023
-      25/50 ⭐: 4: C++
-    section 2024
-      21/50 ⭐: 2: C++
-    section 2025
-      12/24 ⭐: 3: C++
+xychart
+    title "Advent of Code"
+    x-axis "Année" [2021,2022,2023,2024,2025]
+    y-axis "% de complétion" 0 --> 100
+    bar [48, 52, 50, 42, 50]
 ```
+
+|Année|Langage|⭐|%|
+|--|--|--|--|
+|2021|Python|24|48|
+|2022|Python|26|52|
+|2023|C++|25|50|
+|2024|C++|21|42|
+|2025|C++|12|50|
