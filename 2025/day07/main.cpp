@@ -6,6 +6,7 @@
 #include <tuple>
 #include <utility>
 #include <vector>
+
 using namespace std;
 
 using Coords = pair<int, int>;
@@ -115,7 +116,7 @@ int main() {
     cout << "Result for example: " << countSplit(example) << endl;
     cout << "Result for input: " << countSplit(input) << endl;
 
-    cout << "Part 1" << endl;
+    cout << "Part 2" << endl;
     cout << "Result for example: " << countTimeline(example) << endl;
     cout << "Result for input: " << countTimeline(input) << endl;
 }
